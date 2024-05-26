@@ -3,7 +3,6 @@ import React from 'react'
 export const CartCard = ({ cart, onAddQuantity, onDecreaseQuantity, onDeleteCart }) => {
   return (
     <div className='border-gray border-2 p-5 rounded-xl'>
-        <div>Game Name : {cart.productId}</div>
         <div>Game Name : {cart.productName}</div>
         <div>Description : {cart.productDescription}</div>
         <div>Price : {cart.productPrice}</div>
