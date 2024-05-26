@@ -1,5 +1,5 @@
 class CartService {
-    static BASE_URL = "http://localhost:8080/api";
+    static BASE_URL = "http://34.87.105.93/api";
 
     static async addCart(cart) {
         try {

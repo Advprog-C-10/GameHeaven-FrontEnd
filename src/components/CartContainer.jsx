@@ -11,7 +11,7 @@ export const CartContainer = () => {
         const getCarts = async () => {
             try {
                 const cartList = await CartService.getCartsByUserId("123");
-                setCarts(await cartList);
+                setCarts(Array.isArray(cartList) ? cartList : []);
             } catch (error) {
                 console.log("Error", error);
             }
